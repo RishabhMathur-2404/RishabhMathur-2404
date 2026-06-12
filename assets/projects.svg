@@ -1,0 +1,56 @@
+<svg viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" role="img" aria-label="Selected projects">
+  <defs>
+    <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5FD4F4"/>
+      <stop offset="1" stop-color="#FFB454"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="330" rx="14" fill="#0A1B2A"/>
+  <rect x=".5" y=".5" width="899" height="329" rx="13.5" fill="none" stroke="rgba(127,170,205,.22)"/>
+  <text x="24" y="34" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="11" letter-spacing="3" fill="#FFB454">THINGS SHIPPED</text>
+
+  <!-- card 1: AURA -->
+  <g>
+    <rect x="24" y="52" width="418" height="124" rx="10" fill="#0E2438" stroke="rgba(127,170,205,.20)"/>
+    <rect x="24" y="52" width="418" height="2.5" fill="url(#topline)"/>
+    <text x="44" y="84" font-size="19" font-weight="700" fill="#DCE9F5">AURA</text>
+    <text x="442" y="84" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#FFB454" dx="-20">6 HOTELS · LIVE</text>
+    <text x="44" y="108" font-size="12.5" fill="#8FA9C0">Hotel operations SaaS — Gemini task routing, ~40% efficiency gain</text>
+    <text x="44" y="128" font-size="12.5" fill="#8FA9C0">Angular dashboard · Ionic app · Node.js/gRPC · MongoDB · AWS S3</text>
+    <text x="44" y="158" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5FD4F4">SAAS · GENAI ROUTING · BUSINESS OWNER</text>
+  </g>
+
+  <!-- card 2: Grevon -->
+  <g>
+    <rect x="458" y="52" width="418" height="124" rx="10" fill="#0E2438" stroke="rgba(127,170,205,.20)"/>
+    <rect x="458" y="52" width="418" height="2.5" fill="url(#topline)"/>
+    <text x="478" y="84" font-size="19" font-weight="700" fill="#DCE9F5">Grevon</text>
+    <text x="876" y="84" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#FFB454" dx="-20">3 PLATFORMS · LIVE</text>
+    <text x="478" y="108" font-size="12.5" fill="#8FA9C0">Embeddable AI hotel concierge — ~31K LoC, 29+ components</text>
+    <text x="478" y="128" font-size="12.5" fill="#8FA9C0">Hand-built gRPC-web client · Mapbox · Stripe · multi-tenant</text>
+    <text x="478" y="158" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5FD4F4">STENCILJS · WEB COMPONENTS · FRONTEND OWNER</text>
+  </g>
+
+  <!-- card 3: Agent & RAG Lab -->
+  <g>
+    <rect x="24" y="190" width="418" height="124" rx="10" fill="#0E2438" stroke="rgba(127,170,205,.20)"/>
+    <rect x="24" y="190" width="418" height="2.5" fill="url(#topline)"/>
+    <text x="44" y="222" font-size="19" font-weight="700" fill="#DCE9F5">Agent &amp; RAG Lab</text>
+    <text x="442" y="222" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#FFB454" dx="-20">OPEN SOURCE</text>
+    <text x="44" y="246" font-size="12.5" fill="#8FA9C0">Async FastAPI LLM backends — RAG, supervisor &amp; map-reduce agents</text>
+    <text x="44" y="266" font-size="12.5" fill="#8FA9C0">LangChain LCEL · LangGraph · LangSmith evals · ChromaDB</text>
+    <text x="44" y="296" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5FD4F4">RAG · MULTI-AGENT · LLM-AS-JUDGE</text>
+  </g>
+
+  <!-- card 4: NOVA -->
+  <g>
+    <rect x="458" y="190" width="418" height="124" rx="10" fill="#0E2438" stroke="rgba(127,170,205,.20)"/>
+    <rect x="458" y="190" width="418" height="2.5" fill="url(#topline)"/>
+    <text x="478" y="222" font-size="19" font-weight="700" fill="#DCE9F5">NOVA</text>
+    <text x="876" y="222" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#FFB454" dx="-20">IOT · GRMS</text>
+    <text x="478" y="246" font-size="12.5" fill="#8FA9C0">Contactless guest-room management — IoT wired to web dashboard</text>
+    <text x="478" y="266" font-size="12.5" fill="#8FA9C0">Angular · Node.js · REST · real-time device monitoring</text>
+    <text x="478" y="296" font-family="Consolas,Menlo,monospace" font-size="10.5" fill="#5FD4F4">IOT INTEGRATION · REAL-TIME CONTROL</text>
+  </g>
+</svg>

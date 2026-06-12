@@ -1,0 +1,63 @@
+<svg viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" role="img" aria-label="Career timeline">
+  <defs>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5FD4F4"/>
+      <stop offset="1" stop-color="#FFB454"/>
+    </linearGradient>
+    <pattern id="grid2" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="rgba(127,170,205,.10)" stroke-width="1"/>
+    </pattern>
+    <style>
+      .draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2.6s cubic-bezier(.22,1,.36,1) .4s forwards}
+      @keyframes draw{to{stroke-dashoffset:0}}
+      .node{opacity:0;animation:pop .5s ease forwards}
+      .n1{animation-delay:.7s}.n2{animation-delay:1.2s}.n3{animation-delay:1.7s}.n4{animation-delay:2.2s}.n5{animation-delay:2.7s}
+      @keyframes pop{from{opacity:0}to{opacity:1}}
+      .ring{animation:ringpulse 2.2s ease-in-out 3s infinite}
+      @keyframes ringpulse{0%,100%{opacity:.6}50%{opacity:.15}}
+    </style>
+  </defs>
+
+  <rect width="900" height="250" rx="14" fill="#0A1B2A"/>
+  <rect width="900" height="250" rx="14" fill="url(#grid2)"/>
+  <rect x=".5" y=".5" width="899" height="249" rx="13.5" fill="none" stroke="rgba(127,170,205,.22)"/>
+
+  <text x="24" y="34" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="11" letter-spacing="3" fill="#FFB454">THE TIMELINE — AGENT IN TRANSIT</text>
+
+  <!-- route -->
+  <path id="routePath" d="M 20 150 C 55 150 55 150 90 150 C 180 150 180 110 270 110 C 360 110 360 150 450 150 C 540 150 540 110 630 110 C 720 110 720 150 810 150 C 845 150 845 150 880 150" fill="none" stroke="rgba(127,170,205,.25)" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <path class="draw" d="M 20 150 C 55 150 55 150 90 150 C 180 150 180 110 270 110 C 360 110 360 150 450 150 C 540 150 540 110 630 110 C 720 110 720 150 810 150 C 845 150 845 150 880 150" fill="none" stroke="url(#route)" stroke-width="2.5"/>
+
+  <!-- nodes -->
+  <g>
+    <circle class="node n1" cx="90"  cy="150" r="5" fill="#FFB454"/>
+    <circle class="node n2" cx="270" cy="110" r="5" fill="#FFB454"/>
+    <circle class="node n3" cx="450" cy="150" r="5" fill="#FFB454"/>
+    <circle class="node n4" cx="630" cy="110" r="5" fill="#FFB454"/>
+    <circle class="node n5" cx="810" cy="150" r="5" fill="#FFB454"/>
+    <circle class="ring" cx="810" cy="150" r="11" fill="none" stroke="#FFB454" stroke-width="1"/>
+  </g>
+
+  <!-- traveling agent -->
+  <circle r="5" fill="#FFB454">
+    <animateMotion dur="7s" begin="3s" repeatCount="indefinite" rotate="none">
+      <mpath xlink:href="#routePath" href="#routePath"/>
+    </animateMotion>
+  </circle>
+
+  <!-- labels (alternating above / below) -->
+  <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="10.5" fill="#8FA9C0" text-anchor="middle">
+    <text x="90"  y="186" fill="#5FD4F4">DEC 2023</text>
+    <text x="270" y="74"  fill="#5FD4F4">JUL 2024</text>
+    <text x="450" y="186" fill="#5FD4F4">6 HOTELS LIVE</text>
+    <text x="630" y="74"  fill="#5FD4F4">3 PLATFORMS</text>
+    <text x="810" y="186" fill="#5FD4F4">NOW</text>
+  </g>
+  <g font-size="13" font-weight="700" fill="#DCE9F5" text-anchor="middle">
+    <text x="90"  y="204">MEAN Stack Dev</text>
+    <text x="270" y="92">Full Stack Dev</text>
+    <text x="450" y="204">AURA — SaaS</text>
+    <text x="630" y="92">Grevon — AI Widget</text>
+    <text x="810" y="204">AI Engineering</text>
+  </g>
+</svg>

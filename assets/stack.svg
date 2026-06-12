@@ -1,0 +1,21 @@
+<svg viewBox="0 0 900 170" xmlns="http://www.w3.org/2000/svg" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" role="img" aria-label="Tech stack">
+  <rect width="900" height="170" rx="14" fill="#0A1B2A"/>
+  <rect x=".5" y=".5" width="899" height="169" rx="13.5" fill="none" stroke="rgba(127,170,205,.22)"/>
+  <text x="24" y="34" font-size="11" letter-spacing="3" fill="#FFB454">THE STACK</text>
+
+  <g font-size="12.5">
+    <text x="24"  y="68"  fill="#FFB454">FRONTEND</text>
+    <text x="130" y="68"  fill="#DCE9F5">Angular v18–v21 · React · Ionic · TypeScript · StencilJS · Web Components · Tailwind · SCSS</text>
+
+    <text x="24"  y="96"  fill="#FFB454">BACKEND</text>
+    <text x="130" y="96"  fill="#DCE9F5">Node.js · Express · Python · FastAPI (async) · gRPC / gRPC-web · GraphQL · MongoDB · Firebase · ChromaDB</text>
+
+    <text x="24"  y="124" fill="#FFB454">AI / GENAI</text>
+    <text x="130" y="124" fill="#DCE9F5">OpenAI · Anthropic · Groq · Gemini · LangChain · LangGraph · LangSmith · RAG · Multi-agent · Embeddings</text>
+
+    <text x="24"  y="152" fill="#FFB454">OPS</text>
+    <text x="130" y="152" fill="#DCE9F5">Jest · Docker · AWS · CI/CD · Git · Agile / Scrum · Jira · PMP®</text>
+  </g>
+
+  <line x1="118" y1="52" x2="118" y2="158" stroke="rgba(127,170,205,.20)"/>
+</svg>

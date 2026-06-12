@@ -1,0 +1,56 @@
+<svg viewBox="0 0 900 270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" role="img" aria-label="Rishabh Mathur — Full Stack Developer and AI Engineer">
+  <defs>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="rgba(127,170,205,.10)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5FD4F4"/>
+      <stop offset="1" stop-color="#FFB454"/>
+    </linearGradient>
+    <style>
+      .pulse{animation:pulse 2.6s ease-in-out infinite}
+      .pulse2{animation:pulse 2.6s ease-in-out 1.3s infinite}
+      @keyframes pulse{0%,100%{opacity:.85}50%{opacity:.25}}
+      .blink{animation:blink 1.1s steps(1) infinite}
+      @keyframes blink{50%{opacity:0}}
+      .draw{stroke-dasharray:860;stroke-dashoffset:860;animation:draw 2.2s cubic-bezier(.22,1,.36,1) .3s forwards}
+      @keyframes draw{to{stroke-dashoffset:0}}
+    </style>
+  </defs>
+
+  <rect width="900" height="270" rx="14" fill="#0A1B2A"/>
+  <rect width="900" height="270" rx="14" fill="url(#grid)"/>
+  <rect x=".5" y=".5" width="899" height="269" rx="13.5" fill="none" stroke="rgba(127,170,205,.22)"/>
+
+  <!-- constellation -->
+  <g stroke="rgba(95,212,244,.25)" stroke-width="1">
+    <line x1="640" y1="60" x2="720" y2="100"/>
+    <line x1="720" y1="100" x2="800" y2="64"/>
+    <line x1="720" y1="100" x2="760" y2="170"/>
+    <line x1="760" y1="170" x2="840" y2="140"/>
+    <line x1="800" y1="64" x2="840" y2="140"/>
+  </g>
+  <g fill="#5FD4F4">
+    <circle class="pulse"  cx="640" cy="60"  r="3"/>
+    <circle class="pulse2" cx="720" cy="100" r="4"/>
+    <circle class="pulse"  cx="800" cy="64"  r="3"/>
+    <circle class="pulse2" cx="760" cy="170" r="3"/>
+    <circle class="pulse"  cx="840" cy="140" r="4"/>
+  </g>
+  <circle cx="720" cy="100" r="9" fill="none" stroke="#FFB454" stroke-width="1" class="pulse"/>
+
+  <!-- eyebrow -->
+  <line x1="48" y1="64" x2="86" y2="64" stroke="#FFB454" stroke-width="1.5"/>
+  <text x="96" y="68" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" letter-spacing="3" fill="#FFB454">PMP® CERTIFIED · PUNE, INDIA</text>
+
+  <!-- name -->
+  <text x="46" y="132" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#DCE9F5">Rishabh Mathur</text>
+  <text x="48" y="178" font-size="34" font-style="italic" font-family="Georgia,'Times New Roman',serif" fill="#FFB454">builds AI that ships.</text>
+
+  <!-- subtitle + cursor -->
+  <text x="48" y="222" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="13.5" fill="#8FA9C0">Full Stack Developer &amp; AI Engineer — Angular · FastAPI · LangGraph · gRPC</text>
+  <rect class="blink" x="592" y="210" width="8" height="15" fill="#FFB454"/>
+
+  <!-- accent rule that draws itself -->
+  <line class="draw" x1="20" y1="250" x2="880" y2="250" stroke="url(#accentline)" stroke-width="2"/>
+</svg>
